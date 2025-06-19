@@ -1,0 +1,120 @@
+/* Estilos para tablets (768px e acima) */
+@media (min-width: 768px) {
+  .hero-section {
+    min-height: 60vh;
+  }
+  
+  .custom-block-wrap {
+    margin-bottom: 0;
+  }
+  
+  .volunteer-section {
+    padding: 90px 0;
+  }
+}
+
+/* Estilos para dispositivos móveis (767px e abaixo) */
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: 50vh;
+  }
+
+  .navbar-brand span {
+    font-size: 16px;
+  }
+  
+  .custom-block-wrap {
+    margin-bottom: 30px;
+  }
+  
+  .site-header {
+    padding: 10px 0;
+  }
+
+  .contact-info-wrap,
+  .volunteer-form {
+    padding: 20px;
+  }
+  
+  .carousel-caption {
+    padding: 30px;
+  }
+  
+  .carousel-caption h1 {
+    font-size: 32px;
+  }
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 480px) {
+  .navbar-brand img {
+    max-width: 120px;
+  }
+  
+  .carousel-caption h1 {
+    font-size: 24px;
+  }
+  
+  .section-padding {
+    padding: 50px 0;
+  }
+  
+  .custom-btn {
+    padding: 10px 20px;
+  }
+}
+
+/* Responsivo para bloco de meta de post */
+.post-meta {
+  text-align: center;
+  color: #5a6f80;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  word-break: break-word;
+}
+
+@media (max-width: 767px) {
+  .post-meta {
+    font-size: 14px;
+    display: block;
+    padding: 8px 0;
+    line-height: 1.5;
+  }
+}
+
+/* Melhorias de UI/UX */
+.custom-btn {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.custom-block-wrap {
+  transition: transform 0.3s ease;
+}
+
+.custom-block-wrap:hover {
+  transform: translateY(-5px);
+}
+
+/* Efeitos de loading e feedback */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Animações suaves */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

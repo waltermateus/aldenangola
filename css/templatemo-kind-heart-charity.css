@@ -44,6 +44,13 @@ https://templatemo.com/tm-581-kind-heart-charity
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Bootstrap Icons';
+    src: url('../fonts/bootstrap-icons.woff2') format('woff2'),
+         url('../fonts/bootstrap-icons.woff') format('woff');
+    font-display: swap; /* This helps with font loading performance */
+}
+
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
@@ -142,6 +149,15 @@ p {
   color: var(--p-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centro {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul li {
@@ -1653,3 +1669,15 @@ blockquote::before {
   }
 }
 
+/* Garante que o dropdown aparece no mobile ao clicar */
+@media (max-width: 991px) {
+  .dropdown-menu {
+    display: none;
+    position: static;
+    float: none;
+  }
+  .dropdown.show .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
